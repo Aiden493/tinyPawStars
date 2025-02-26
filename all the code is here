@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Tiny Paw Stars</title>
+        <meta charset="UTF-8">
+        <meta charset = "viewport" content="width = device-width , initial-scale = 1.0">
+        <link rel = "stylesheet" href = "styles.css">
+        <style>
+            body{
+                background-color: tan;
+                color:black;
+                font-family: 'Times New Roman';
+                text-align: center;
+               
+                
+            }
+
+            h2{
+                text-align: center;
+                margin:0;
+
+            }
+
+            button{
+                padding:4%;
+                border-radius:25px;
+                background-color: black;
+                color:white;
+                cursor:pointer;
+        
+
+            }
+
+            button:hover{
+                background-color: gray;
+            }
+
+            .hidden{
+                display:none;
+            }
+
+            img{
+                display: block;
+                margin:130px;
+                width:400px;
+                mix-blend-mode: multiply;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id = "main-screen">
+            <h2>Tiny Paw Stars⭐</h2>
+            <button id = "aboutus">about us</button>
+            <button id = "contact">Contact Info</button>
+            <button id = "puppypics">Pup Pics</button>
+            <button id = "Pay">Payment</button>
+            <p></p>
+            <img src = "data:image/png;base64,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">
+        </div>
+
+        <div id = "about-us" class = "hidden">
+            <h1>About Us</h1>
+            <p>Tiny Paw Stars is a small, family-run dog breeding business specializing in chihuahuas.Our mission is to provide loving,well-cared  puppies to responsible and caring homes. we are committed to ensuring health and well-being of our dogs and strive to match our puppies with owners who will cherish them as part of their family.Please note that this is a limited-time venture,and we are only offering puppies a few times.</p>
+            <button id = "back-btn">Go Back</button>
+        </div>
+
+        <div id = "contact-info" class = "hidden">
+            <p>Donna Sizemore: (574)304-3433</p>
+            <p>Email: Tinypawstars@gmail.com</p>
+            <a href="https://facebook.com/donna.sizemore3" target = "_blank">Donna sizemore's facebook account</a>
+            <p></p>
+            <button id = "back-btn2">Go Back</button>
+        </div>
+
+        <div id = "Payment" class = "hidden">
+            <p>We use PayPal</p>
+            <a href = "https://www.paypal.com/us/home" target="_blank">To get payPal ready</a>
+            <p></p>
+            <button id = "back-btn3">Go Back</button>
+
+        </div>
+
+        <div id = "pic" class = "hidden">
+            <h2>Mother Dutchess </h2>
+            <img src = "https://mail.google.com/mail/u/0?ui=2&ik=faf18d33fc&attid=0.1&permmsgid=msg-a:r5723009864356607296&th=1948bcf9fad8d6cd&view=fimg&fur=ip&permmsgid=msg-a:r5723009864356607296&sz=s0-l75-ft&attbid=ANGjdJ8cTCSSO1ccTYRCEI_ZSdIyC2zN_jysV24D-PDh4zqH7bIPCD2o9I_APZsnkCnO5oG5jBWtJtWmB-8Oupb1MOQsVGe_r4oE6Ijqhbu-eeZLAZiLtSI0ffegnxQ&disp=emb&realattid=ii_1948bcf947fb13ce4881&zw">
+            <h2>Not For Sale! only showing her as the parent.</h2>
+            <p> </p>
+            <button id = "back_btn4">Go Back</button>
+          
+        </div>
+
+
+        <script>
+            document.getElementById('aboutus').addEventListener('click' , () => {
+                document.getElementById('main-screen').classList.add('hidden');
+                document.getElementById('about-us').classList.remove('hidden');
+             });
+
+             document.getElementById('back-btn').addEventListener('click' , () =>{
+                document.getElementById('about-us').classList.add('hidden');
+                document.getElementById('main-screen').classList.remove('hidden');
+             });
+
+             document.getElementById('contact').addEventListener('click' , () =>{
+                document.getElementById('main-screen').classList.add('hidden');
+                document.getElementById('contact-info').classList.remove('hidden');
+             });
+
+             document.getElementById('back-btn2').addEventListener('click' , ()=>{
+                document.getElementById('contact-info').classList.add('hidden');
+                document.getElementById('main-screen').classList.remove('hidden');
+             });
+
+             document.getElementById('Pay').addEventListener('click' , ()=>{
+                document.getElementById('main-screen').classList.add('hidden');
+                document.getElementById('Payment').classList.remove('hidden');
+
+             });
+
+             document.getElementById('back-btn3').addEventListener('click' , ()=>{
+                document.getElementById('Payment').classList.add('hidden');
+                document.getElementById('main-screen').classList.remove('hidden');
+             });
+
+             document.getElementById('puppypics').addEventListener('click' , ()=>{
+                document.getElementById('main-screen').classList.add('hidden');
+                document.getElementById('pic').classList.remove('hidden');
+
+             });
+
+             document.getElementById('back_btn4').addEventListener('click' , ()=>{
+                document.getElementById('pic').classList.add('hidden');
+                document.getElementById('main-screen').classList.remove('hidden');
+             });
+        </script>
+    </body>
+</html>
