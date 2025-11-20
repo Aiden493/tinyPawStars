@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #FFF8DC;
     color: #333;
     text-align: center;
     font-size: 1rem;
@@ -73,9 +73,6 @@ button.glow {
     animation: glow 1.5s infinite alternate ease-in-out;
 }
 
-.hidden {
-    display: none;
-}
 
 img {
     max-width: 100%;
@@ -242,3 +239,5 @@ img {
     color: #2ecc71;
     text-decoration: underline;
 }
+
+.hidden { display: none; }
