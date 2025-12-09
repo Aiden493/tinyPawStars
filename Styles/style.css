@@ -335,3 +335,12 @@ img {
     button { padding: 0.85rem; font-size: 1rem; }
     #logo-circle { width: 7rem; height: 7rem; }
 }
+
+#logo {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+}
