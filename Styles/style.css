@@ -241,3 +241,94 @@ img {
 }
 
 .hidden { display: none; }
+
+/* Mobile / small-screen tweaks */
+@media (max-width: 700px) {
+    body {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+
+    nav {
+        font-size: 1.25rem;
+        padding: 0.7rem;
+    }
+
+    /* Make scroll container wrap and buttons easier to tap */
+    .scroll-container {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        gap: 0.6rem;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+
+    .scroll-container > * {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+        margin: 0.25rem;
+        scroll-snap-align: none;
+        opacity: 1; /* ensure visible when stacked */
+        transform: translateY(0);
+    }
+
+    button {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        font-size: 1.05rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    #logo-circle {
+        width: 8rem;
+        height: 8rem;
+        margin-top: 1rem;
+    }
+
+    #main-screen, #about-us, #contact-info, #Payment, #pic, #up, #momanddad {
+        width: calc(100% - 1rem);
+        margin: 0.6rem auto;
+        padding: 1rem;
+    }
+
+    .puppy-cards {
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: center;
+    }
+
+    .card {
+        width: 92%;
+        max-width: 360px;
+        height: 260px;
+    }
+
+    .card-front img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Images should scale nicely on small screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Reduce some animation distances for better perceived performance on mobile */
+    .scroll-container > * {
+        transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .scroll-container > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    nav { font-size: 1.1rem; }
+    button { padding: 0.85rem; font-size: 1rem; }
+    #logo-circle { width: 7rem; height: 7rem; }
+}
