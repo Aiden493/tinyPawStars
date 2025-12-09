@@ -20,7 +20,8 @@ button.addEventListener("mouseleave", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Animate once, then stop
+      } else {
+        entry.target.classList.remove('visible');
       }
     });
   }, {
